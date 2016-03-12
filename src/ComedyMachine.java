@@ -33,8 +33,6 @@ public void keyTyped(KeyEvent e) {
 }
 @Override
 public void keyPressed(KeyEvent e) {
-	Random numberGen=new Random();
-	int number=numberGen.nextInt(3);
 
 	// TODO Auto-generated method stub
 	
