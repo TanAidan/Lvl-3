@@ -5,7 +5,6 @@ public class SnakesOnThePlay {
 		
 		Plane plane = new Plane();
 
-		int deathProbability;
 		for (int i = 0; i < plane.snakes.size(); i++) {
 			 Snake s=plane.snakes.get(i);
 			if(s.isVenomous()){
