@@ -2,24 +2,53 @@ import java.util.List;
 
 public class Algorithms {
 	
-	public static Object findBrokenEgg(List<String> eggs) {
-		// TODO Auto-generated method stub
-		return null;
+	public static int findBrokenEgg(List<String> eggs) {
+		int answer=0;
+		for (int i = 0; i < eggs.size(); i++) {
+			if(eggs.get(i).equals("cracked"))
+			{
+				answer+=i;
+				break;
+			}
+		}
+		return answer;
+		
+		
 	}
 
-	public static Object countPearls(List<Boolean> oysters) {
-		// TODO Auto-generated method stub
-		return null;
+	public static  int countPearls(List<Boolean> oysters) {
+		int count=0;
+		for(int i=0; i<oysters.size(); i++)
+		{
+			if(oysters.get(i)==true)
+			{
+				count++;
+			}
+		}
+		return count;
 	}
 
-	public static Object findTallest(List<Double> peeps) {
-		// TODO Auto-generated method stub
-		return null;
+	public static  double findTallest(List<Double> peeps) {
+		Double tallest=peeps.get(0);
+		for (int i = 1; i <peeps.size(); i++) {
+			if(peeps.get(i)>tallest){
+				tallest=peeps.get(i);
+			}
+		}
+		System.out.println(tallest);
+		return tallest;
 	}
 
-	public static Object findLongestWord(List<String> words) {
-		// TODO Auto-generated method stub
-		return null;
+	public static String findLongestWord(List<String> words) {
+		int value=0;
+		int biggest=words.get(0).length();
+		for (int i = 1; i < words.size(); i++) {
+			if(words.get(i).length()>biggest){
+				biggest=words.get(i).length();
+				value=i;
+			}
+		}
+		return words.get(value);
 	}
 
 	public static boolean containsSOS(List<String> message1) {

@@ -25,11 +25,12 @@ public class SearchingAndSortingAlgorithms {
 	}
 
 	/* Create a method that will return the height of the tallest person. */
+	@SuppressWarnings("deprecation")
 	@Test
 	public void testFindMaxiumum() throws Exception {
 		List<Double> peeps = Arrays.asList(new Double[] { 5.7, 6.2, 3.4, 6.2, 5.0, 5.5, 4.7, 6.2, 3.4, 4.2, 5.0, 4.5,
 				5.1, 6.6 });
-		assertEquals(6.6, Algorithms.findTallest(peeps));
+		assertEquals(6.6, Algorithms.findTallest(peeps),0.1);
 	}
 
 	/* Create a method that will find the longest word. */
